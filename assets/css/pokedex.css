@@ -146,12 +146,12 @@
     border-radius: 1rem;
 }
 
-a{
+.content ul li{
     transition: all 0.5s ease-in-out;
 }
 
-a:hover{
-    filter: sepia(0.5);
+.content ul li:hover{
+    filter: brightness(1.3);
 }
 
 @media screen and (min-width: 380px) {
