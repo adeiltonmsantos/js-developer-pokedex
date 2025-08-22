@@ -5,10 +5,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    width: 35rem;
+    align-items: flex-start;
+    width: 98vw;
+    height: 80vh;
     position: relative;
-    margin: 5rem auto auto;
+    margin: 1vh auto;
 }
 
 
@@ -17,25 +18,26 @@
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    border-radius: 3rem 3rem 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
     color: #ffffff;
-    padding: 4rem 2rem 6rem 2rem;
+    padding: 2.5rem 0 6rem 0.8rem;
     width: 100%;
 }
 
 .top-details h1{
     margin: 0;
     padding: 0;
-    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1.1rem;
+    text-align: left;
 }
 
 .top-details-characteristics{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* margin-left: 20px; */
-    gap: 1rem 0;
+    align-items: flex-start;
+    gap: 0.7rem 0;
 }
 
 /* Listas não ordenadas */
@@ -59,9 +61,10 @@
 }
 
 .abilities li{
-    padding: 0.5rem 1rem;
+    padding: 0.25rem;
     border-radius: 1rem;
     font-weight: bold;
+    font-size: 0.7rem;
 }
 
 .abilities li:nth-child(1){
@@ -75,31 +78,36 @@
 }
 
 .top-details-img{
-    padding-top: 1.5rem;
+    padding-top: 0.5rem;
     position: relative;
     z-index: 1;
 }
+.top-details-img img{
+    height: 8rem;
+}
 
 .top-details-number{
-    padding: 2rem 0 0;
-    font-size: 1.2rem;
+    padding: 1.5rem 0.5rem 0 0;
+    font-size: 0.85rem;
     font-weight: bold;
+    text-align: right;
     width: 100%;
 }
 
 /* Parte inferior do Pokemon */
 .bottom-details{
     background-color: #e2e2e2;
-    font-size: 1.3rem;
-    padding: 2rem 2rem 20rem;
-    border-radius: 3rem;
+    font-size: 0.8rem;
+    padding: 2rem 2rem 0;
+    height: 52.3vh;
+    border-radius: 1.5rem;
     width: 100%;
     position: absolute;
-    bottom: -28.4rem;
+    top: 10.5rem;
 }
 
 .bottom-details h4{
-    border-bottom: 0.3rem solid purple;
+    border-bottom: 0.2rem solid purple;
     padding: 0 1rem 1rem;
     width: fit-content;
     margin-top: 0.7rem;
@@ -117,33 +125,8 @@
     width: 100%;
 }
 
-/* Estilos comuns a top-details e bottom-details */
-.top-details, .bottom-details {
-    /* width: 100%; */
-}
-
-@media screen and (max-width: 565px) {
-    .top-details{
-        flex-direction: column;
-        gap: 0;
-        padding-top: 0;
-    }
-
-    .top-details-characteristics{
-        align-items: flex-start;
-    }
-
-    .top-details-number{
-        order: -1;
-    }
-
-    .detail-container{
-        width: auto;
-        margin: 1rem 1rem auto;
-    }
-
-    .bottom-details{
-        padding: 2rem 2rem 6rem;
-        bottom: -14.1rem;
+@media screen and (min-width:450px){
+    .detail-container {
+        width: 405px;
     }
 }
