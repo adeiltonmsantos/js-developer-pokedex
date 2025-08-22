@@ -23,19 +23,17 @@
 
 <body>
     <section class="detail-container">
-        <div class="top-details grass">
+        <div id="top-details" class="top-details">
             <div class="top-details-characteristics">
-                <h1>Bulbasaur</h1>
-                <ul class="abilities">
-                    <li>grass</li>
-                    <li>poison</li>
-                </ol>
+                <h1 id="name"></h1>
+                <ul id="types" class="abilities">
+                </ul>
             </div>
             <div class="top-details-img">
-                <img src="poke-test.svg" alt="">
+                <img id="photo" src="" alt="">
             </div>
-            <div class="top-details-number">
-                #001
+            <div id="number" class="top-details-number">
+
             </div>
         </div>
         <div class="bottom-details">
@@ -45,38 +43,39 @@
                     <div class="title-characteristics">
                         Species
                     </div>
-                    <div class="value-characteristics">
-                        Bulbasaur
+                    <div id="species" class="value-characteristics">
+                        <!-- Bulbasaur -->
                     </div>
                 </li>
                 <li>
                     <div class="title-characteristics">
                         Height
                     </div>
-                    <div class="value-characteristics">
-                        0.7 m
+                    <div id="height" class="value-characteristics">
+                        <!-- 0.7 m -->
                     </div>
                 </li>
                 <li>
                     <div class="title-characteristics">
                         Weight
                     </div>
-                    <div class="value-characteristics">
-                        6.9 kg
+                    <div id="weight" class="value-characteristics">
+                        <!-- 6.9 kg -->
                     </div>
                 </li>
                 <li>
                     <div class="title-characteristics">
                         Abilities
                     </div>
-                    <div class="value-characteristics">
-                        Overgrow, Chlorophyll
+                    <div id="abilities" class="value-characteristics">
+                        <!-- Overgrow, Chlorophyll -->
                     </div>
                 </li>
             </ul>
         </div>
     </section>
     <script src="assets/js/poke-api.js"></script>
+    <script src="assets/js/pokemon-model.js"></script>
     <script src="assets/js/pokedetail.js"></script>
 </body>
 

@@ -39,5 +39,18 @@ pokeApi.getPokemonByNumber = number => {
 
     return fetch(url)
         .then((response) => response.json())
-        .then(responseJson => console.log(responseJson))
+        .then(poke => {
+            const pokemon = new Pokemon()
+            pokemon.number = poke.id
+            pokemon.name = poke.name 
+            pokemon.types = poke.types.map(typeSlot => typeSlot.type.name)
+            pokemon.species = poke.species.name
+            pokemon.height = Number((poke.height * 0.1).toFixed(1)) + 'm'
+            pokemon.weight = Number((poke.weight * 0.1).toFixed(1)) + 'kg'
+            pokemon.abilities = poke.abilities.map(abilitySlot => abilitySlot.ability.name)
+            pokemon.photo = poke.sprites.other.dream_world.front_default
+            return pokemon
+        })
+        // .then(convertPokeApiDetailToPokemon)
+        // .then(pokedetail => console.log(pokedetail))
 }

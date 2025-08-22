@@ -146,6 +146,14 @@
     border-radius: 1rem;
 }
 
+a{
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+    filter: sepia(0.5);
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
